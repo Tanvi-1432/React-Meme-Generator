@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
+/* header */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 0 37px 0 20.5px;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-left img {
+  width: 40.5px;
+  display: block;
+}
+
+.header-left h2 {
+  font-size: 20.75px;
+  word-spacing: -3px;
+}
+
+.header-right h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* meme component */
+
+.meme-generator {
+  padding: 0 36px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: flex;
+  gap: 17px;
+  justify-content: center;
+  margin: 36px 0 15px;
+}
+
+.meme-generator input {
+  width: 50%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  padding: 5px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: .120s ease-out;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    scale: .98;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.memeImage {
+    margin: 2rem auto;
+    max-width: 477px;
+    position: relative;
+}
+
+.memeImage img {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
