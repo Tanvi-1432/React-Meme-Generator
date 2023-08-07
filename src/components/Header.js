@@ -8,7 +8,7 @@ export default function Header() {
           <h2>Meme Generator</h2>
         </div>
         <div className="header-right">
-            <h4>React Course - Project 3</h4>
+            <h4>React - Project 3</h4>
         </div>
       </header>
     );
